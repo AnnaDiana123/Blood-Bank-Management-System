@@ -16,5 +16,30 @@ namespace BloodBankManagementSystem
         {
             InitializeComponent();
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bloodlogo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormBank_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
