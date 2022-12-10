@@ -1,7 +1,7 @@
 ﻿
 namespace BloodBankManagementSystem
 {
-    partial class MainFormDonor
+    partial class ViewHistoryPage
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,6 @@ namespace BloodBankManagementSystem
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFormDonor));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.DonateLabel = new System.Windows.Forms.Label();
@@ -41,10 +40,13 @@ namespace BloodBankManagementSystem
             this.label14 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.bloodlogo = new System.Windows.Forms.PictureBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Center = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Hour = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bloodlogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -101,7 +103,6 @@ namespace BloodBankManagementSystem
             this.label5.Size = new System.Drawing.Size(175, 32);
             this.label5.TabIndex = 6;
             this.label5.Text = "View History";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -175,39 +176,60 @@ namespace BloodBankManagementSystem
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // bloodlogo
+            // dataGridView1
             // 
-            this.bloodlogo.BackColor = System.Drawing.Color.Transparent;
-            this.bloodlogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bloodlogo.Image = ((System.Drawing.Image)(resources.GetObject("bloodlogo.Image")));
-            this.bloodlogo.InitialImage = ((System.Drawing.Image)(resources.GetObject("bloodlogo.InitialImage")));
-            this.bloodlogo.Location = new System.Drawing.Point(687, 254);
-            this.bloodlogo.Margin = new System.Windows.Forms.Padding(4);
-            this.bloodlogo.Name = "bloodlogo";
-            this.bloodlogo.Size = new System.Drawing.Size(269, 256);
-            this.bloodlogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bloodlogo.TabIndex = 2;
-            this.bloodlogo.TabStop = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Center,
+            this.Date,
+            this.Hour});
+            this.dataGridView1.Location = new System.Drawing.Point(455, 180);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(767, 432);
+            this.dataGridView1.TabIndex = 2;
             // 
-            // MainFormDonor
+            // Center
+            // 
+            this.Center.HeaderText = "Center";
+            this.Center.MinimumWidth = 6;
+            this.Center.Name = "Center";
+            this.Center.Width = 125;
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.MinimumWidth = 6;
+            this.Date.Name = "Date";
+            this.Date.Width = 125;
+            // 
+            // Hour
+            // 
+            this.Hour.HeaderText = "Hour";
+            this.Hour.MinimumWidth = 6;
+            this.Hour.Name = "Hour";
+            this.Hour.Width = 125;
+            // 
+            // ViewHistoryPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1333, 738);
-            this.Controls.Add(this.bloodlogo);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "MainFormDonor";
+            this.Name = "ViewHistoryPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bloodlogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -223,7 +245,10 @@ namespace BloodBankManagementSystem
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.PictureBox bloodlogo;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Center;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Hour;
     }
 }
