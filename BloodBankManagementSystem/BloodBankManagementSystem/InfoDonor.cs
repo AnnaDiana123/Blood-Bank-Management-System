@@ -10,18 +10,26 @@ using System.Windows.Forms;
 
 namespace BloodBankManagementSystem
 {
-    public partial class MainFormDonor : Form
+    public partial class InfoDonor : Form
     {
-        public MainFormDonor()
+        public InfoDonor()
         {
             InitializeComponent();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form f = new InfoDonor();
-            f.Show();
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
