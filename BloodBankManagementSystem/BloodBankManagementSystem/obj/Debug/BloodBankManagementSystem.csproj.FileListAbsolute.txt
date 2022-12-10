@@ -22,3 +22,4 @@ C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankM
 C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\bin\Debug\BloodBankDatabase_log.ldf
 C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.Login.resources
 C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.MainFormDonor.resources
+C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.MainFormAdmin.resources
