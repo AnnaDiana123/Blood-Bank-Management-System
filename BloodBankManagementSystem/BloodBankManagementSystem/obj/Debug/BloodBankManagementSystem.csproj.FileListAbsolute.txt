@@ -3,7 +3,6 @@ C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankM
 C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\bin\Debug\BloodBankManagementSystem.pdb
 C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.csproj.AssemblyReference.cache
 C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.csproj.SuggestedBindingRedirects.cache
-C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.FormBank.resources
 C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.Properties.Resources.resources
 C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.csproj.GenerateResource.cache
 C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.csproj.CoreCompileInputs.cache
@@ -19,3 +18,10 @@ C:\Users\User\Desktop\facultate\an 3\DB\Project\BloodBankManagementSystem\BloodB
 C:\Users\User\Desktop\facultate\an 3\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\facultate\an 3\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.exe
 C:\Users\User\Desktop\facultate\an 3\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.pdb
+C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\bin\Debug\BloodBankDatabase.mdf
+C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\bin\Debug\BloodBankDatabase_log.ldf
+C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.Login.resources
+C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.MainFormDonor.resources
+C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.MainFormAdmin.resources
+C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.ViewPacients.resources
+C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.ViewDonors.resources

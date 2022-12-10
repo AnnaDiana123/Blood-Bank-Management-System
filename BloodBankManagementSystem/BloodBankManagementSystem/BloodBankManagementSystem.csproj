@@ -67,6 +67,24 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewPacients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPacients.Designer.cs">
+      <DependentUpon>ViewPacients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDonors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewDonors.Designer.cs">
+      <DependentUpon>ViewDonors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormAdmin.Designer.cs">
+      <DependentUpon>MainFormAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainFormDonor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +95,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPacients.resx">
+      <DependentUpon>ViewPacients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewDonors.resx">
+      <DependentUpon>ViewDonors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormAdmin.resx">
+      <DependentUpon>MainFormAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainFormDonor.resx">
       <DependentUpon>MainFormDonor.cs</DependentUpon>
