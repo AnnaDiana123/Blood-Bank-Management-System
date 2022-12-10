@@ -23,3 +23,5 @@ C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankM
 C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.Login.resources
 C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.MainFormDonor.resources
 C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.MainFormAdmin.resources
+C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.ViewPacients.resources
+C:\Users\Nicoleta\Desktop\UPT\S5\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.ViewDonors.resources

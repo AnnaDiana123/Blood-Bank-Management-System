@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BloodBankManagementSystem
 {
-    public partial class MainFormAdmin : Form
+    public partial class ViewPacients : Form
     {
-        public MainFormAdmin()
+        public ViewPacients()
         {
             InitializeComponent();
         }
@@ -20,8 +20,9 @@ namespace BloodBankManagementSystem
         private void label1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form form = new ViewDonors();
-            form.Show();
+            Form f = new ViewDonors();
+            f.Show();
+
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -34,6 +35,11 @@ namespace BloodBankManagementSystem
         private void label8_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

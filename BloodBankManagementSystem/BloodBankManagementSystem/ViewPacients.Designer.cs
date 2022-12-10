@@ -1,7 +1,7 @@
 ﻿
 namespace BloodBankManagementSystem
 {
-    partial class MainFormAdmin
+    partial class ViewPacients
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace BloodBankManagementSystem
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFormAdmin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewPacients));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,13 +39,20 @@ namespace BloodBankManagementSystem
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.bloodlogo = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BloodType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonationCenter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bloodlogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -150,6 +157,19 @@ namespace BloodBankManagementSystem
             this.panel2.Size = new System.Drawing.Size(751, 36);
             this.panel2.TabIndex = 1;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(720, 5);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(28, 28);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "X";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -174,38 +194,66 @@ namespace BloodBankManagementSystem
             this.bloodlogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bloodlogo.Image = ((System.Drawing.Image)(resources.GetObject("bloodlogo.Image")));
             this.bloodlogo.InitialImage = ((System.Drawing.Image)(resources.GetObject("bloodlogo.InitialImage")));
-            this.bloodlogo.Location = new System.Drawing.Point(446, 137);
+            this.bloodlogo.Location = new System.Drawing.Point(798, 392);
             this.bloodlogo.Name = "bloodlogo";
-            this.bloodlogo.Size = new System.Drawing.Size(304, 341);
+            this.bloodlogo.Size = new System.Drawing.Size(202, 208);
             this.bloodlogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bloodlogo.TabIndex = 2;
             this.bloodlogo.TabStop = false;
             // 
-            // label8
+            // dataGridView1
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(720, 5);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(28, 28);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "X";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Name,
+            this.BloodType,
+            this.DonationDate,
+            this.DonationCenter,
+            this.Phone});
+            this.dataGridView1.Location = new System.Drawing.Point(299, 105);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(646, 198);
+            this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // MainFormAdmin
+            // Name
+            // 
+            this.Name.HeaderText = "Name";
+            this.Name.Name = "Name";
+            // 
+            // BloodType
+            // 
+            this.BloodType.HeaderText = "Blood Type";
+            this.BloodType.Name = "BloodType";
+            // 
+            // DonationDate
+            // 
+            this.DonationDate.HeaderText = "Donation Date";
+            this.DonationDate.Name = "DonationDate";
+            // 
+            // DonationCenter
+            // 
+            this.DonationCenter.HeaderText = "Donation Center";
+            this.DonationCenter.Name = "DonationCenter";
+            // 
+            // Phone
+            // 
+            this.Phone.HeaderText = "Phone";
+            this.Phone.Name = "Phone";
+            // 
+            // ViewPacients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bloodlogo);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "MainFormAdmin";
+            //this.Name = "ViewPacients";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.panel1.ResumeLayout(false);
@@ -213,6 +261,7 @@ namespace BloodBankManagementSystem
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bloodlogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -231,5 +280,11 @@ namespace BloodBankManagementSystem
         private System.Windows.Forms.PictureBox bloodlogo;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BloodType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DonationDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DonationCenter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
     }
 }

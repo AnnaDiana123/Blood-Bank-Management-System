@@ -146,6 +146,7 @@
             this.label5.Size = new System.Drawing.Size(220, 28);
             this.label5.TabIndex = 9;
             this.label5.Text = "Continue As Admin";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 

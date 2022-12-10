@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace BloodBankManagementSystem
 {
-    public partial class MainFormAdmin : Form
+    public partial class ViewDonors : Form
     {
-        public MainFormAdmin()
+        public ViewDonors()
         {
             InitializeComponent();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form form = new ViewDonors();
-            form.Show();
+
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -34,6 +32,18 @@ namespace BloodBankManagementSystem
         private void label8_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form form = new ViewPacients();
+            form.Show();
         }
     }
 }
