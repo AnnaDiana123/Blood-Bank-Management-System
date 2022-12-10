@@ -30,6 +30,7 @@ namespace BloodBankManagementSystem
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewHistoryPage));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.DonateLabel = new System.Windows.Forms.Label();
@@ -44,9 +45,11 @@ namespace BloodBankManagementSystem
             this.Center = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Hour = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bloodlogo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bloodlogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,6 +79,7 @@ namespace BloodBankManagementSystem
             this.label3.Size = new System.Drawing.Size(101, 32);
             this.label3.TabIndex = 8;
             this.label3.Text = "Logout";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // DonateLabel
             // 
@@ -103,6 +107,7 @@ namespace BloodBankManagementSystem
             this.label5.Size = new System.Drawing.Size(175, 32);
             this.label5.TabIndex = 6;
             this.label5.Text = "View History";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -116,6 +121,7 @@ namespace BloodBankManagementSystem
             this.label4.Size = new System.Drawing.Size(205, 32);
             this.label4.TabIndex = 5;
             this.label4.Text = "Medical Report";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1
             // 
@@ -211,12 +217,27 @@ namespace BloodBankManagementSystem
             this.Hour.Name = "Hour";
             this.Hour.Width = 125;
             // 
+            // bloodlogo
+            // 
+            this.bloodlogo.BackColor = System.Drawing.Color.Transparent;
+            this.bloodlogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bloodlogo.Image = ((System.Drawing.Image)(resources.GetObject("bloodlogo.Image")));
+            this.bloodlogo.InitialImage = ((System.Drawing.Image)(resources.GetObject("bloodlogo.InitialImage")));
+            this.bloodlogo.Location = new System.Drawing.Point(1174, 637);
+            this.bloodlogo.Margin = new System.Windows.Forms.Padding(4);
+            this.bloodlogo.Name = "bloodlogo";
+            this.bloodlogo.Size = new System.Drawing.Size(146, 90);
+            this.bloodlogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bloodlogo.TabIndex = 9;
+            this.bloodlogo.TabStop = false;
+            // 
             // ViewHistoryPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1333, 738);
+            this.Controls.Add(this.bloodlogo);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -230,6 +251,7 @@ namespace BloodBankManagementSystem
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bloodlogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -250,5 +272,6 @@ namespace BloodBankManagementSystem
         private System.Windows.Forms.DataGridViewTextBoxColumn Center;
         private System.Windows.Forms.DataGridViewTextBoxColumn Date;
         private System.Windows.Forms.DataGridViewTextBoxColumn Hour;
+        private System.Windows.Forms.PictureBox bloodlogo;
     }
 }

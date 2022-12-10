@@ -35,5 +35,24 @@ namespace BloodBankManagementSystem
         {
             Application.Exit();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form f = new MedicalReportPage();
+            f.Show();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form f = new Login();
+            f.Show();
+        }
     }
 }
