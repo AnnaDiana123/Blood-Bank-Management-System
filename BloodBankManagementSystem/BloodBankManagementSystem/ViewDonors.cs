@@ -45,5 +45,12 @@ namespace BloodBankManagementSystem
             Form form = new ViewPacients();
             form.Show();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form f = new BloodTransfer();
+            f.Show();
+        }
     }
 }

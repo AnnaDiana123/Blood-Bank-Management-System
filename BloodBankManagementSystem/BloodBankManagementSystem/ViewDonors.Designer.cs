@@ -120,6 +120,7 @@ namespace BloodBankManagementSystem
             this.label5.Size = new System.Drawing.Size(164, 26);
             this.label5.TabIndex = 6;
             this.label5.Text = "Blood Transfer";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
