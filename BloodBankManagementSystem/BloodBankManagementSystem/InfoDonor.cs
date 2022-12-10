@@ -43,5 +43,12 @@ namespace BloodBankManagementSystem
         {
 
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form f = new ViewHistoryPage();
+            f.Show();
+        }
     }
 }
