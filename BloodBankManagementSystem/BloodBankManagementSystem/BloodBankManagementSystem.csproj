@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DonatePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonatePage.Designer.cs">
+      <DependentUpon>DonatePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="InfoDonor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DonatePage.resx">
+      <DependentUpon>DonatePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InfoDonor.resx">
       <DependentUpon>InfoDonor.cs</DependentUpon>
     </EmbeddedResource>
