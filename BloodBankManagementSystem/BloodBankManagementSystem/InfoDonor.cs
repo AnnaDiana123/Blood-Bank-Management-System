@@ -31,5 +31,17 @@ namespace BloodBankManagementSystem
         {
             Application.Exit();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form f = new DonatePage();
+            f.Show();
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

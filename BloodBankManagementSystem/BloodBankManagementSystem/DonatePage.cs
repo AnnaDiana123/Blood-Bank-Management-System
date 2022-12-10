@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BloodBankManagementSystem
 {
-    public partial class MainFormDonor : Form
+    public partial class DonatePage : Form
     {
-        public MainFormDonor()
+        public DonatePage()
         {
             InitializeComponent();
         }
@@ -24,11 +24,9 @@ namespace BloodBankManagementSystem
             f.Show();
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            this.Hide();
-            Form f = new DonatePage();
-            f.Show();
+
         }
 
         private void label14_Click(object sender, EventArgs e)

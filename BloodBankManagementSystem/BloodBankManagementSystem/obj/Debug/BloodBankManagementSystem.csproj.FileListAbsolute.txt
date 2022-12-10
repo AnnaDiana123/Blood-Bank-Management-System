@@ -51,3 +51,5 @@ C:\Users\Nicoleta\Desktop\UPT\S5\DB\Proiect Merge\BloodBankManagementSystem\Bloo
 C:\Users\Nicoleta\Desktop\UPT\S5\DB\Proiect Merge\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.csproj.CoreCompileInputs.cache
 C:\Users\Nicoleta\Desktop\UPT\S5\DB\Proiect Merge\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.exe
 C:\Users\Nicoleta\Desktop\UPT\S5\DB\Proiect Merge\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.pdb
+C:\Users\User\Desktop\facultate\an 3\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.DonatePage.resources
+C:\Users\User\Desktop\facultate\an 3\DB\Project\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.BloodTransfer.resources
