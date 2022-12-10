@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BloodBankManagementSystem
 {
-    public partial class MainFormDonor : Form
+    public partial class ViewHistoryPage : Form
     {
-        public MainFormDonor()
+        public ViewHistoryPage()
         {
             InitializeComponent();
         }
@@ -34,13 +34,6 @@ namespace BloodBankManagementSystem
         private void label14_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form f = new ViewHistoryPage();
-            f.Show();
         }
     }
 }
