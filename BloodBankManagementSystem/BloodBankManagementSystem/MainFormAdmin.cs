@@ -35,5 +35,19 @@ namespace BloodBankManagementSystem
         {
             Application.Exit();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form f = new BloodTransfer();
+            f.Show();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form f = new ViewPacients();
+            f.Show();
+        }
     }
 }

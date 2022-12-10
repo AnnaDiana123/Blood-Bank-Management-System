@@ -39,10 +39,10 @@ namespace BloodBankManagementSystem
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.bloodlogo = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bloodlogo)).BeginInit();
@@ -100,6 +100,7 @@ namespace BloodBankManagementSystem
             this.label6.Size = new System.Drawing.Size(155, 26);
             this.label6.TabIndex = 7;
             this.label6.Text = "View Pacients";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -112,6 +113,7 @@ namespace BloodBankManagementSystem
             this.label5.Size = new System.Drawing.Size(164, 26);
             this.label5.TabIndex = 6;
             this.label5.Text = "Blood Transfer";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -150,6 +152,19 @@ namespace BloodBankManagementSystem
             this.panel2.Size = new System.Drawing.Size(751, 36);
             this.panel2.TabIndex = 1;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(720, 5);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(28, 28);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "X";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -180,19 +195,6 @@ namespace BloodBankManagementSystem
             this.bloodlogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bloodlogo.TabIndex = 2;
             this.bloodlogo.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(720, 5);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(28, 28);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "X";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // MainFormAdmin
             // 
