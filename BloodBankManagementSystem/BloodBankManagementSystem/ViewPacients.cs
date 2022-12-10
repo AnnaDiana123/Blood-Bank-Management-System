@@ -55,5 +55,12 @@ namespace BloodBankManagementSystem
             Form f = new AddPacients();
             f.Show();
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form f = new AddMedicalReports();
+            f.Show();
+        }
     }
 }

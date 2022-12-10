@@ -90,6 +90,7 @@ namespace BloodBankManagementSystem
             this.label7.Size = new System.Drawing.Size(221, 26);
             this.label7.TabIndex = 9;
             this.label7.Text = "Add Medical Report";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label3
             // 

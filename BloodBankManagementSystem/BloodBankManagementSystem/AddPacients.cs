@@ -52,7 +52,9 @@ namespace BloodBankManagementSystem
 
         private void labelAddReport_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Form f = new AddMedicalReports();
+            f.Show();
         }
     }
 }
