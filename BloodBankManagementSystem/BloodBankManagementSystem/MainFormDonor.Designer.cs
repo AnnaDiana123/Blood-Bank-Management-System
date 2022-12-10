@@ -74,6 +74,7 @@ namespace BloodBankManagementSystem
             this.label3.Size = new System.Drawing.Size(101, 32);
             this.label3.TabIndex = 8;
             this.label3.Text = "Logout";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // DonateLabel
             // 
@@ -115,6 +116,7 @@ namespace BloodBankManagementSystem
             this.label4.Size = new System.Drawing.Size(205, 32);
             this.label4.TabIndex = 5;
             this.label4.Text = "Medical Report";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1
             // 
