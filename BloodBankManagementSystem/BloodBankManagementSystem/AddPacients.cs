@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BloodBankManagementSystem
 {
-    public partial class BloodTransfer : Form
+    public partial class AddPacients : Form
     {
-        public BloodTransfer()
+        public AddPacients()
         {
             InitializeComponent();
         }
@@ -36,13 +36,6 @@ namespace BloodBankManagementSystem
             Application.Exit();
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form f = new ViewPacients();
-            f.Show();
-        }
-
         private void label5_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -50,11 +43,16 @@ namespace BloodBankManagementSystem
             f.Show();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void label6_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form f = new AddPacients();
+            Form f = new ViewPacients();
             f.Show();
+        }
+
+        private void labelAddReport_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

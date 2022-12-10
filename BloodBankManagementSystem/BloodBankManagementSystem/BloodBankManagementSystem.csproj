@@ -48,7 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -61,6 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddPacients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPacients.Designer.cs">
+      <DependentUpon>AddPacients.cs</DependentUpon>
+    </Compile>
     <Compile Include="DonatePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +119,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddPacients.resx">
+      <DependentUpon>AddPacients.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DonatePage.resx">
       <DependentUpon>DonatePage.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +154,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -157,9 +169,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="BloodBankDatabase.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -168,6 +178,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>BloodBankDatabase.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\blooddrop.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
