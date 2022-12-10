@@ -141,6 +141,7 @@ namespace BloodBankManagementSystem
             this.label4.Size = new System.Drawing.Size(147, 26);
             this.label4.TabIndex = 5;
             this.label4.Text = "Add Pacients";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1
             // 
