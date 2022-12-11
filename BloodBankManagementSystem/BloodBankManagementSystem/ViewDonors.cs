@@ -7,14 +7,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace BloodBankManagementSystem
 {
     public partial class ViewDonors : Form
     {
+        SqlConnection conn=new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Nicoleta\Desktop\UPT\S5\DB\Proiect Merge\BloodBankManagementSystem\BloodBankManagementSystem\BloodBankDatabase.mdf"";Integrated Security=True");
         public ViewDonors()
         {
             InitializeComponent();
+            populate();
+        }
+
+        private void populate()
+        {
+            conn.Open();
+            string query;
+            query = "select DonorTable.DNum, DonorTable.DName, DonorTable.DAge, DonorTable.DPhone, DonorTable.DGender,DonorTable.DGroup from DonorTable";
+            SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            dataGridViewDonors.DataSource = ds.Tables[0];
+            conn.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)

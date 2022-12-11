@@ -40,6 +40,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bloodlogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,7 +119,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Honeydew;
-            this.button1.Location = new System.Drawing.Point(402, 443);
+            this.button1.Location = new System.Drawing.Point(397, 411);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(198, 36);
             this.button1.TabIndex = 7;
@@ -141,7 +142,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("MV Boli", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(685, 447);
+            this.label5.Location = new System.Drawing.Point(685, 431);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(220, 28);
             this.label5.TabIndex = 9;
@@ -154,7 +155,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(631, 452);
+            this.label6.Location = new System.Drawing.Point(625, 438);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(27, 21);
             this.label6.TabIndex = 10;
@@ -173,6 +174,19 @@
             this.label7.Text = "X";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(429, 450);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(140, 21);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "Create Account";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,6 +195,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(932, 556);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -217,6 +232,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
 

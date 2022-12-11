@@ -55,5 +55,12 @@ namespace BloodBankManagementSystem
             Form form = new MainFormAdmin();
             form.Show();
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form form = new CreateAccount();
+            form.Show();
+        }
     }
 }

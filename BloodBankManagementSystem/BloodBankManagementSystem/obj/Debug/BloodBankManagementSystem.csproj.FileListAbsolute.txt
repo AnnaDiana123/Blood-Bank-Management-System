@@ -58,3 +58,4 @@ C:\Users\Nicoleta\Desktop\UPT\S5\DB\Proiect Merge\BloodBankManagementSystem\Bloo
 C:\Users\Nicoleta\Desktop\UPT\S5\DB\Proiect Merge\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.AddMedicalReports.resources
 C:\Users\Nicoleta\Desktop\UPT\S5\DB\Proiect Merge\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.ViewHistoryPage.resources
 C:\Users\Nicoleta\Desktop\UPT\S5\DB\Proiect Merge\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.MedicalReportPage.resources
+C:\Users\Nicoleta\Desktop\UPT\S5\DB\Proiect Merge\BloodBankManagementSystem\BloodBankManagementSystem\obj\Debug\BloodBankManagementSystem.CreateAccount.resources
