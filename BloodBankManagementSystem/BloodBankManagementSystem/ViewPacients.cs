@@ -13,7 +13,7 @@ namespace BloodBankManagementSystem
 {
     public partial class ViewPacients : Form
     {
-        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Nicoleta\Desktop\UPT\S5\DB\Proiect Merge\BloodBankManagementSystem\BloodBankManagementSystem\BloodBankDatabase.mdf"";Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""|DataDirectory|\BloodBankDatabase.mdf"";Integrated Security=True");
         public ViewPacients()
         {
             InitializeComponent();
@@ -76,6 +76,11 @@ namespace BloodBankManagementSystem
             this.Hide();
             Form f = new AddMedicalReports();
             f.Show();
+        }
+
+        private void ViewPacients_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
