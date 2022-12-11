@@ -54,5 +54,10 @@ namespace BloodBankManagementSystem
             Form f = new Login();
             f.Show();
         }
+
+        private void ViewHistoryPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
