@@ -43,16 +43,11 @@ namespace BloodBankManagementSystem
             this.label2 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.bloodlogo = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BloodType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonationCenter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewPatients = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bloodlogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPatients)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -204,45 +199,14 @@ namespace BloodBankManagementSystem
             this.bloodlogo.TabIndex = 2;
             this.bloodlogo.TabStop = false;
             // 
-            // dataGridView1
+            // dataGridViewPatients
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Name,
-            this.BloodType,
-            this.DonationDate,
-            this.DonationCenter,
-            this.Phone});
-            this.dataGridView1.Location = new System.Drawing.Point(299, 105);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(646, 198);
-            this.dataGridView1.TabIndex = 3;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // Name
-            // 
-            this.Name.HeaderText = "Name";
-            this.Name.Name = "Name";
-            // 
-            // BloodType
-            // 
-            this.BloodType.HeaderText = "Blood Type";
-            this.BloodType.Name = "BloodType";
-            // 
-            // DonationDate
-            // 
-            this.DonationDate.HeaderText = "Donation Date";
-            this.DonationDate.Name = "DonationDate";
-            // 
-            // DonationCenter
-            // 
-            this.DonationCenter.HeaderText = "Donation Center";
-            this.DonationCenter.Name = "DonationCenter";
-            // 
-            // Phone
-            // 
-            this.Phone.HeaderText = "Phone";
-            this.Phone.Name = "Phone";
+            this.dataGridViewPatients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPatients.Location = new System.Drawing.Point(299, 105);
+            this.dataGridViewPatients.Name = "dataGridViewPatients";
+            this.dataGridViewPatients.Size = new System.Drawing.Size(646, 198);
+            this.dataGridViewPatients.TabIndex = 3;
+            this.dataGridViewPatients.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ViewPacients
             // 
@@ -250,13 +214,13 @@ namespace BloodBankManagementSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1000, 600);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewPatients);
             this.Controls.Add(this.bloodlogo);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
-            //this.Name = "ViewPacients";
+            this.Name = "ViewPacients";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.panel1.ResumeLayout(false);
@@ -264,7 +228,7 @@ namespace BloodBankManagementSystem
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bloodlogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPatients)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -283,11 +247,6 @@ namespace BloodBankManagementSystem
         private System.Windows.Forms.PictureBox bloodlogo;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BloodType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DonationDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DonationCenter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
+        private System.Windows.Forms.DataGridView dataGridViewPatients;
     }
 }
