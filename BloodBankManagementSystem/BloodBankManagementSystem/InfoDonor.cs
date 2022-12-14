@@ -12,9 +12,11 @@ namespace BloodBankManagementSystem
 {
     public partial class InfoDonor : Form
     {
-        public InfoDonor()
+        private string currentUsername;
+        public InfoDonor( string username)
         {
             InitializeComponent();
+            currentUsername = username;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -35,7 +37,7 @@ namespace BloodBankManagementSystem
         private void label6_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form f = new DonatePage();
+            Form f = new DonatePage(currentUsername);
             f.Show();
         }
 
@@ -47,14 +49,14 @@ namespace BloodBankManagementSystem
         private void label5_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form f = new ViewHistoryPage();
+            Form f = new ViewHistoryPage(currentUsername);
             f.Show();
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form f = new MedicalReportPage();
+            Form f = new MedicalReportPage(currentUsername);
             f.Show();
         }
 

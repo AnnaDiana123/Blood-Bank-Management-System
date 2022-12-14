@@ -45,7 +45,7 @@ namespace BloodBankManagementSystem
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form f1 = new MainFormDonor();
+            Form f1 = new MainFormDonor(textBox1.Text);
             f1.Show();
         }
 
