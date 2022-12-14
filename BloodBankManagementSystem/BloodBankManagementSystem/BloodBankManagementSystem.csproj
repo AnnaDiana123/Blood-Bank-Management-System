@@ -208,10 +208,10 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="BloodBankDatabase.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="BloodBankDatabase_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>BloodBankDatabase.mdf</DependentUpon>
     </Content>
     <None Include="Resources\blooddrop.png" />
