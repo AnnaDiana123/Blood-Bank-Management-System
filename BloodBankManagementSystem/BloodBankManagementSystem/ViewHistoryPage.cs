@@ -12,24 +12,24 @@ namespace BloodBankManagementSystem
 {
     public partial class ViewHistoryPage : Form
     {
-        private string currentUsername;
-        public ViewHistoryPage(string username)
+        private int currentId;
+        public ViewHistoryPage(int id)
         {
             InitializeComponent();
-            currentUsername = username;
+            currentId = id;
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form f = new InfoDonor(currentUsername);
+            Form f = new InfoDonor(currentId);
             f.Show();
         }
 
         private void label6_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form f = new DonatePage(currentUsername);
+            Form f = new DonatePage(currentId);
             f.Show();
         }
 
@@ -41,7 +41,7 @@ namespace BloodBankManagementSystem
         private void label4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form f = new MedicalReportPage(currentUsername);
+            Form f = new MedicalReportPage(currentId);
             f.Show();
         }
 

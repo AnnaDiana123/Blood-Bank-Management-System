@@ -12,25 +12,24 @@ namespace BloodBankManagementSystem
 {
     public partial class MainFormDonor : Form
     {
-        private string currentUsername;
-        public MainFormDonor(string username)
+        private int currentID;
+        public MainFormDonor(int id)
         {
             InitializeComponent();
-            currentUsername = username;
-            label6.Text = currentUsername;
+            currentID = id;
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form f = new InfoDonor(currentUsername);
+            Form f = new InfoDonor(currentID);
             f.Show();
         }
 
         private void label6_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form f = new DonatePage(currentUsername);
+            Form f = new DonatePage(currentID);
             f.Show();
         }
 
@@ -42,14 +41,14 @@ namespace BloodBankManagementSystem
         private void label5_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form f = new ViewHistoryPage(currentUsername);
+            Form f = new ViewHistoryPage(currentID);
             f.Show();
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form f = new MedicalReportPage(currentUsername);
+            Form f = new MedicalReportPage(currentID);
             f.Show();
         }
 
@@ -62,7 +61,7 @@ namespace BloodBankManagementSystem
 
         private void label6_Click_1(object sender, EventArgs e)
         {
-            label6.Text = currentUsername;
+            
         }
     }
 }
