@@ -74,9 +74,9 @@ namespace BloodBankManagementSystem
             this.panel1.Controls.Add(this.labelViewDonors);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(249, 600);
+            this.panel1.Size = new System.Drawing.Size(332, 738);
             this.panel1.TabIndex = 0;
             // 
             // labelAddReport
@@ -85,9 +85,10 @@ namespace BloodBankManagementSystem
             this.labelAddReport.BackColor = System.Drawing.Color.Transparent;
             this.labelAddReport.Font = new System.Drawing.Font("MV Boli", 15F, System.Drawing.FontStyle.Bold);
             this.labelAddReport.ForeColor = System.Drawing.Color.White;
-            this.labelAddReport.Location = new System.Drawing.Point(9, 232);
+            this.labelAddReport.Location = new System.Drawing.Point(12, 286);
+            this.labelAddReport.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAddReport.Name = "labelAddReport";
-            this.labelAddReport.Size = new System.Drawing.Size(221, 26);
+            this.labelAddReport.Size = new System.Drawing.Size(265, 32);
             this.labelAddReport.TabIndex = 9;
             this.labelAddReport.Text = "Add Medical Report";
             this.labelAddReport.Click += new System.EventHandler(this.labelAddReport_Click);
@@ -98,9 +99,10 @@ namespace BloodBankManagementSystem
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MV Boli", 15F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(10, 565);
+            this.label3.Location = new System.Drawing.Point(13, 695);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 26);
+            this.label3.Size = new System.Drawing.Size(100, 32);
             this.label3.TabIndex = 8;
             this.label3.Text = "Logout";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -111,9 +113,10 @@ namespace BloodBankManagementSystem
             this.labelViewPacients.BackColor = System.Drawing.Color.Transparent;
             this.labelViewPacients.Font = new System.Drawing.Font("MV Boli", 15F, System.Drawing.FontStyle.Bold);
             this.labelViewPacients.ForeColor = System.Drawing.Color.White;
-            this.labelViewPacients.Location = new System.Drawing.Point(9, 105);
+            this.labelViewPacients.Location = new System.Drawing.Point(12, 129);
+            this.labelViewPacients.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelViewPacients.Name = "labelViewPacients";
-            this.labelViewPacients.Size = new System.Drawing.Size(155, 26);
+            this.labelViewPacients.Size = new System.Drawing.Size(185, 32);
             this.labelViewPacients.TabIndex = 7;
             this.labelViewPacients.Text = "View Pacients";
             this.labelViewPacients.Click += new System.EventHandler(this.label6_Click);
@@ -124,9 +127,10 @@ namespace BloodBankManagementSystem
             this.labelBloodTransfer.BackColor = System.Drawing.Color.Transparent;
             this.labelBloodTransfer.Font = new System.Drawing.Font("MV Boli", 15F, System.Drawing.FontStyle.Bold);
             this.labelBloodTransfer.ForeColor = System.Drawing.Color.White;
-            this.labelBloodTransfer.Location = new System.Drawing.Point(9, 146);
+            this.labelBloodTransfer.Location = new System.Drawing.Point(12, 180);
+            this.labelBloodTransfer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelBloodTransfer.Name = "labelBloodTransfer";
-            this.labelBloodTransfer.Size = new System.Drawing.Size(164, 26);
+            this.labelBloodTransfer.Size = new System.Drawing.Size(197, 32);
             this.labelBloodTransfer.TabIndex = 6;
             this.labelBloodTransfer.Text = "Blood Transfer";
             this.labelBloodTransfer.Click += new System.EventHandler(this.label5_Click);
@@ -137,9 +141,10 @@ namespace BloodBankManagementSystem
             this.labelAddPacients.BackColor = System.Drawing.Color.Transparent;
             this.labelAddPacients.Font = new System.Drawing.Font("MV Boli", 15F, System.Drawing.FontStyle.Bold);
             this.labelAddPacients.ForeColor = System.Drawing.Color.White;
-            this.labelAddPacients.Location = new System.Drawing.Point(9, 190);
+            this.labelAddPacients.Location = new System.Drawing.Point(12, 234);
+            this.labelAddPacients.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAddPacients.Name = "labelAddPacients";
-            this.labelAddPacients.Size = new System.Drawing.Size(147, 26);
+            this.labelAddPacients.Size = new System.Drawing.Size(177, 32);
             this.labelAddPacients.TabIndex = 5;
             this.labelAddPacients.Text = "Add Pacients";
             // 
@@ -149,9 +154,10 @@ namespace BloodBankManagementSystem
             this.labelViewDonors.BackColor = System.Drawing.Color.Transparent;
             this.labelViewDonors.Font = new System.Drawing.Font("MV Boli", 15F, System.Drawing.FontStyle.Bold);
             this.labelViewDonors.ForeColor = System.Drawing.Color.White;
-            this.labelViewDonors.Location = new System.Drawing.Point(10, 67);
+            this.labelViewDonors.Location = new System.Drawing.Point(13, 82);
+            this.labelViewDonors.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelViewDonors.Name = "labelViewDonors";
-            this.labelViewDonors.Size = new System.Drawing.Size(140, 26);
+            this.labelViewDonors.Size = new System.Drawing.Size(167, 32);
             this.labelViewDonors.TabIndex = 3;
             this.labelViewDonors.Text = "View Donors";
             this.labelViewDonors.Click += new System.EventHandler(this.label1_Click);
@@ -162,10 +168,10 @@ namespace BloodBankManagementSystem
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(249, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(332, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(751, 36);
+            this.panel2.Size = new System.Drawing.Size(1001, 44);
             this.panel2.TabIndex = 1;
             // 
             // label8
@@ -174,9 +180,10 @@ namespace BloodBankManagementSystem
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(720, 5);
+            this.label8.Location = new System.Drawing.Point(960, 6);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(28, 28);
+            this.label8.Size = new System.Drawing.Size(35, 34);
             this.label8.TabIndex = 12;
             this.label8.Text = "X";
             this.label8.Click += new System.EventHandler(this.label8_Click);
@@ -187,9 +194,10 @@ namespace BloodBankManagementSystem
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MV Boli", 20F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(139, 0);
+            this.label2.Location = new System.Drawing.Point(185, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(454, 34);
+            this.label2.Size = new System.Drawing.Size(571, 45);
             this.label2.TabIndex = 2;
             this.label2.Text = "Blood Bank Management System";
             // 
@@ -206,9 +214,10 @@ namespace BloodBankManagementSystem
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonAdd.Font = new System.Drawing.Font("MV Boli", 15F, System.Drawing.FontStyle.Bold);
             this.buttonAdd.ForeColor = System.Drawing.Color.Honeydew;
-            this.buttonAdd.Location = new System.Drawing.Point(694, 453);
+            this.buttonAdd.Location = new System.Drawing.Point(925, 558);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(127, 36);
+            this.buttonAdd.Size = new System.Drawing.Size(169, 44);
             this.buttonAdd.TabIndex = 37;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -221,9 +230,10 @@ namespace BloodBankManagementSystem
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("MV Boli", 15F, System.Drawing.FontStyle.Bold);
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(815, 157);
+            this.label13.Location = new System.Drawing.Point(1087, 193);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(90, 26);
+            this.label13.Size = new System.Drawing.Size(109, 32);
             this.label13.TabIndex = 35;
             this.label13.Text = "Address";
             // 
@@ -240,10 +250,10 @@ namespace BloodBankManagementSystem
             "B+",
             "AB+",
             "O+"});
-            this.comboBoxBloodGroup.Location = new System.Drawing.Point(555, 308);
-            this.comboBoxBloodGroup.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxBloodGroup.Location = new System.Drawing.Point(740, 379);
+            this.comboBoxBloodGroup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxBloodGroup.Name = "comboBoxBloodGroup";
-            this.comboBoxBloodGroup.Size = new System.Drawing.Size(141, 24);
+            this.comboBoxBloodGroup.Size = new System.Drawing.Size(187, 28);
             this.comboBoxBloodGroup.TabIndex = 34;
             // 
             // label12
@@ -252,9 +262,10 @@ namespace BloodBankManagementSystem
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("MV Boli", 15F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(551, 265);
+            this.label12.Location = new System.Drawing.Point(735, 326);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(139, 26);
+            this.label12.Size = new System.Drawing.Size(167, 32);
             this.label12.TabIndex = 33;
             this.label12.Text = "Blood Group";
             // 
@@ -265,18 +276,19 @@ namespace BloodBankManagementSystem
             this.comboBoxGender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBoxGender.Location = new System.Drawing.Point(820, 308);
-            this.comboBoxGender.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxGender.Location = new System.Drawing.Point(1093, 379);
+            this.comboBoxGender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxGender.Name = "comboBoxGender";
-            this.comboBoxGender.Size = new System.Drawing.Size(128, 24);
+            this.comboBoxGender.Size = new System.Drawing.Size(169, 28);
             this.comboBoxGender.TabIndex = 32;
             // 
             // textBoxPhone
             // 
             this.textBoxPhone.Font = new System.Drawing.Font("MV Boli", 10F);
-            this.textBoxPhone.Location = new System.Drawing.Point(285, 308);
+            this.textBoxPhone.Location = new System.Drawing.Point(380, 379);
+            this.textBoxPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxPhone.Name = "textBoxPhone";
-            this.textBoxPhone.Size = new System.Drawing.Size(141, 29);
+            this.textBoxPhone.Size = new System.Drawing.Size(187, 34);
             this.textBoxPhone.TabIndex = 31;
             // 
             // label11
@@ -285,18 +297,20 @@ namespace BloodBankManagementSystem
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("MV Boli", 15F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(280, 266);
+            this.label11.Location = new System.Drawing.Point(373, 327);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(73, 26);
+            this.label11.Size = new System.Drawing.Size(88, 32);
             this.label11.TabIndex = 30;
             this.label11.Text = "Phone";
             // 
             // textBoxAge
             // 
             this.textBoxAge.Font = new System.Drawing.Font("MV Boli", 10F);
-            this.textBoxAge.Location = new System.Drawing.Point(549, 199);
+            this.textBoxAge.Location = new System.Drawing.Point(732, 245);
+            this.textBoxAge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxAge.Name = "textBoxAge";
-            this.textBoxAge.Size = new System.Drawing.Size(147, 29);
+            this.textBoxAge.Size = new System.Drawing.Size(195, 34);
             this.textBoxAge.TabIndex = 29;
             // 
             // label10
@@ -305,9 +319,10 @@ namespace BloodBankManagementSystem
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("MV Boli", 15F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(551, 157);
+            this.label10.Location = new System.Drawing.Point(735, 193);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(48, 26);
+            this.label10.Size = new System.Drawing.Size(58, 32);
             this.label10.TabIndex = 28;
             this.label10.Text = "Age";
             // 
@@ -317,9 +332,10 @@ namespace BloodBankManagementSystem
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("MV Boli", 15F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(815, 264);
+            this.label9.Location = new System.Drawing.Point(1087, 325);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(83, 26);
+            this.label9.Size = new System.Drawing.Size(100, 32);
             this.label9.TabIndex = 27;
             this.label9.Text = "Gender";
             // 
@@ -329,18 +345,20 @@ namespace BloodBankManagementSystem
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("MV Boli", 20F, System.Drawing.FontStyle.Bold);
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
-            this.label14.Location = new System.Drawing.Point(528, 59);
+            this.label14.Location = new System.Drawing.Point(704, 73);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(184, 34);
+            this.label14.Size = new System.Drawing.Size(232, 45);
             this.label14.TabIndex = 26;
             this.label14.Text = "New Pacient";
             // 
             // textBoxName
             // 
             this.textBoxName.Font = new System.Drawing.Font("MV Boli", 10F);
-            this.textBoxName.Location = new System.Drawing.Point(285, 199);
+            this.textBoxName.Location = new System.Drawing.Point(380, 245);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(141, 29);
+            this.textBoxName.Size = new System.Drawing.Size(187, 34);
             this.textBoxName.TabIndex = 25;
             // 
             // label15
@@ -349,9 +367,10 @@ namespace BloodBankManagementSystem
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("MV Boli", 15F, System.Drawing.FontStyle.Bold);
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(280, 157);
+            this.label15.Location = new System.Drawing.Point(373, 193);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(69, 26);
+            this.label15.Size = new System.Drawing.Size(83, 32);
             this.label15.TabIndex = 24;
             this.label15.Text = "Name";
             // 
@@ -361,9 +380,10 @@ namespace BloodBankManagementSystem
             this.labelStatus.BackColor = System.Drawing.Color.Transparent;
             this.labelStatus.Font = new System.Drawing.Font("MV Boli", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
-            this.labelStatus.Location = new System.Drawing.Point(660, 430);
+            this.labelStatus.Location = new System.Drawing.Point(880, 529);
+            this.labelStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelStatus.Name = "labelStatus";
-            this.labelStatus.Size = new System.Drawing.Size(0, 20);
+            this.labelStatus.Size = new System.Drawing.Size(0, 25);
             this.labelStatus.TabIndex = 41;
             // 
             // bloodlogo
@@ -372,9 +392,10 @@ namespace BloodBankManagementSystem
             this.bloodlogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bloodlogo.Image = ((System.Drawing.Image)(resources.GetObject("bloodlogo.Image")));
             this.bloodlogo.InitialImage = ((System.Drawing.Image)(resources.GetObject("bloodlogo.InitialImage")));
-            this.bloodlogo.Location = new System.Drawing.Point(388, 359);
+            this.bloodlogo.Location = new System.Drawing.Point(517, 442);
+            this.bloodlogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bloodlogo.Name = "bloodlogo";
-            this.bloodlogo.Size = new System.Drawing.Size(202, 208);
+            this.bloodlogo.Size = new System.Drawing.Size(269, 256);
             this.bloodlogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bloodlogo.TabIndex = 42;
             this.bloodlogo.TabStop = false;
@@ -382,17 +403,18 @@ namespace BloodBankManagementSystem
             // textBoxAddress
             // 
             this.textBoxAddress.Font = new System.Drawing.Font("MV Boli", 10F);
-            this.textBoxAddress.Location = new System.Drawing.Point(820, 194);
+            this.textBoxAddress.Location = new System.Drawing.Point(1093, 239);
+            this.textBoxAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxAddress.Name = "textBoxAddress";
-            this.textBoxAddress.Size = new System.Drawing.Size(128, 29);
+            this.textBoxAddress.Size = new System.Drawing.Size(169, 34);
             this.textBoxAddress.TabIndex = 43;
             // 
             // AddPacients
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.ClientSize = new System.Drawing.Size(1333, 738);
             this.Controls.Add(this.textBoxAddress);
             this.Controls.Add(this.bloodlogo);
             this.Controls.Add(this.labelStatus);
@@ -412,7 +434,7 @@ namespace BloodBankManagementSystem
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddPacients";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";

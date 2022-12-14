@@ -40,14 +40,11 @@ namespace BloodBankManagementSystem
             this.label14 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Center = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Hour = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewHistory = new System.Windows.Forms.DataGridView();
             this.bloodlogo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHistory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bloodlogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -181,40 +178,15 @@ namespace BloodBankManagementSystem
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // dataGridView1
+            // dataGridViewHistory
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Center,
-            this.Date,
-            this.Hour});
-            this.dataGridView1.Location = new System.Drawing.Point(455, 180);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(767, 432);
-            this.dataGridView1.TabIndex = 2;
-            // 
-            // Center
-            // 
-            this.Center.HeaderText = "Center";
-            this.Center.MinimumWidth = 6;
-            this.Center.Name = "Center";
-            this.Center.Width = 125;
-            // 
-            // Date
-            // 
-            this.Date.HeaderText = "Date";
-            this.Date.MinimumWidth = 6;
-            this.Date.Name = "Date";
-            this.Date.Width = 125;
-            // 
-            // Hour
-            // 
-            this.Hour.HeaderText = "Hour";
-            this.Hour.MinimumWidth = 6;
-            this.Hour.Name = "Hour";
-            this.Hour.Width = 125;
+            this.dataGridViewHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewHistory.Location = new System.Drawing.Point(455, 180);
+            this.dataGridViewHistory.Name = "dataGridViewHistory";
+            this.dataGridViewHistory.RowHeadersWidth = 51;
+            this.dataGridViewHistory.RowTemplate.Height = 24;
+            this.dataGridViewHistory.Size = new System.Drawing.Size(495, 432);
+            this.dataGridViewHistory.TabIndex = 2;
             // 
             // bloodlogo
             // 
@@ -236,7 +208,7 @@ namespace BloodBankManagementSystem
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1333, 738);
             this.Controls.Add(this.bloodlogo);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewHistory);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -249,7 +221,7 @@ namespace BloodBankManagementSystem
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHistory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bloodlogo)).EndInit();
             this.ResumeLayout(false);
 
@@ -267,10 +239,7 @@ namespace BloodBankManagementSystem
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Center;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Hour;
+        private System.Windows.Forms.DataGridView dataGridViewHistory;
         private System.Windows.Forms.PictureBox bloodlogo;
     }
 }

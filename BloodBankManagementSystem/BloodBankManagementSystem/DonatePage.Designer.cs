@@ -40,15 +40,15 @@ namespace BloodBankManagementSystem
             this.label14 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.HourComboBox = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
+            this.SaveButton = new System.Windows.Forms.Button();
+            this.errorLabel = new System.Windows.Forms.Label();
+            this.centerComboBox = new System.Windows.Forms.ComboBox();
+            this.monthCalendarPicker = new System.Windows.Forms.MonthCalendar();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -77,7 +77,7 @@ namespace BloodBankManagementSystem
             this.label3.Location = new System.Drawing.Point(13, 695);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 32);
+            this.label3.Size = new System.Drawing.Size(100, 32);
             this.label3.TabIndex = 8;
             this.label3.Text = "Logout";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -91,7 +91,7 @@ namespace BloodBankManagementSystem
             this.label6.Location = new System.Drawing.Point(12, 129);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 32);
+            this.label6.Size = new System.Drawing.Size(101, 32);
             this.label6.TabIndex = 7;
             this.label6.Text = "Donate";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -105,7 +105,7 @@ namespace BloodBankManagementSystem
             this.label5.Location = new System.Drawing.Point(12, 180);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(175, 32);
+            this.label5.Size = new System.Drawing.Size(174, 32);
             this.label5.TabIndex = 6;
             this.label5.Text = "View History";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -119,7 +119,7 @@ namespace BloodBankManagementSystem
             this.label4.Location = new System.Drawing.Point(12, 234);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(205, 32);
+            this.label4.Size = new System.Drawing.Size(204, 32);
             this.label4.TabIndex = 5;
             this.label4.Text = "Medical Report";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -133,7 +133,7 @@ namespace BloodBankManagementSystem
             this.label1.Location = new System.Drawing.Point(13, 82);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 32);
+            this.label1.Size = new System.Drawing.Size(87, 32);
             this.label1.TabIndex = 3;
             this.label1.Text = "Donor";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -183,12 +183,6 @@ namespace BloodBankManagementSystem
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Location = new System.Drawing.Point(700, 309);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 2;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -198,7 +192,7 @@ namespace BloodBankManagementSystem
             this.label7.Location = new System.Drawing.Point(724, 212);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(192, 32);
+            this.label7.Size = new System.Drawing.Size(191, 32);
             this.label7.TabIndex = 6;
             this.label7.Text = "Choose a date";
             // 
@@ -211,18 +205,9 @@ namespace BloodBankManagementSystem
             this.label8.Location = new System.Drawing.Point(356, 212);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(216, 32);
+            this.label8.Size = new System.Drawing.Size(215, 32);
             this.label8.TabIndex = 7;
             this.label8.Text = "Choose a center";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(362, 309);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(210, 37);
-            this.comboBox1.TabIndex = 8;
             // 
             // label9
             // 
@@ -237,11 +222,11 @@ namespace BloodBankManagementSystem
             this.label9.TabIndex = 9;
             this.label9.Text = "Donate";
             // 
-            // comboBox2
+            // HourComboBox
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.HourComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.HourComboBox.FormattingEnabled = true;
+            this.HourComboBox.Items.AddRange(new object[] {
             "8:00",
             "9:00",
             "10:00",
@@ -249,10 +234,10 @@ namespace BloodBankManagementSystem
             "12:00",
             "13:00",
             "14:00"});
-            this.comboBox2.Location = new System.Drawing.Point(1073, 309);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(210, 37);
-            this.comboBox2.TabIndex = 11;
+            this.HourComboBox.Location = new System.Drawing.Point(1073, 309);
+            this.HourComboBox.Name = "HourComboBox";
+            this.HourComboBox.Size = new System.Drawing.Size(210, 37);
+            this.HourComboBox.TabIndex = 11;
             // 
             // label10
             // 
@@ -263,38 +248,53 @@ namespace BloodBankManagementSystem
             this.label10.Location = new System.Drawing.Point(1067, 212);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(208, 32);
+            this.label10.Size = new System.Drawing.Size(207, 32);
             this.label10.TabIndex = 10;
             this.label10.Text = "Choose an hour";
             // 
-            // button1
+            // SaveButton
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("MV Boli", 15F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.Honeydew;
-            this.button1.Location = new System.Drawing.Point(730, 602);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 44);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Save";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.SaveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
+            this.SaveButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.SaveButton.Font = new System.Drawing.Font("MV Boli", 15F, System.Drawing.FontStyle.Bold);
+            this.SaveButton.ForeColor = System.Drawing.Color.Honeydew;
+            this.SaveButton.Location = new System.Drawing.Point(730, 602);
+            this.SaveButton.Margin = new System.Windows.Forms.Padding(4);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(186, 44);
+            this.SaveButton.TabIndex = 23;
+            this.SaveButton.Text = "Save";
+            this.SaveButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.SaveButton.UseVisualStyleBackColor = false;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
-            // label11
+            // errorLabel
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("MV Boli", 15F, System.Drawing.FontStyle.Bold);
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(772, 682);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(105, 32);
-            this.label11.TabIndex = 24;
-            this.label11.Text = "Eroare!";
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.BackColor = System.Drawing.Color.Transparent;
+            this.errorLabel.Font = new System.Drawing.Font("MV Boli", 15F, System.Drawing.FontStyle.Bold);
+            this.errorLabel.ForeColor = System.Drawing.Color.Black;
+            this.errorLabel.Location = new System.Drawing.Point(356, 679);
+            this.errorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(0, 32);
+            this.errorLabel.TabIndex = 24;
+            // 
+            // centerComboBox
+            // 
+            this.centerComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.centerComboBox.FormattingEnabled = true;
+            this.centerComboBox.Location = new System.Drawing.Point(362, 309);
+            this.centerComboBox.Name = "centerComboBox";
+            this.centerComboBox.Size = new System.Drawing.Size(210, 37);
+            this.centerComboBox.TabIndex = 8;
+            // 
+            // monthCalendarPicker
+            // 
+            this.monthCalendarPicker.Location = new System.Drawing.Point(700, 309);
+            this.monthCalendarPicker.Name = "monthCalendarPicker";
+            this.monthCalendarPicker.TabIndex = 2;
             // 
             // DonatePage
             // 
@@ -302,15 +302,15 @@ namespace BloodBankManagementSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1333, 738);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.errorLabel);
+            this.Controls.Add(this.SaveButton);
+            this.Controls.Add(this.HourComboBox);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.centerComboBox);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.monthCalendarPicker);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -318,6 +318,7 @@ namespace BloodBankManagementSystem
             this.Name = "DonatePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
+            this.Load += new System.EventHandler(this.DonatePage_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -339,14 +340,14 @@ namespace BloodBankManagementSystem
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox HourComboBox;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.Label errorLabel;
+        private System.Windows.Forms.ComboBox centerComboBox;
+        private System.Windows.Forms.MonthCalendar monthCalendarPicker;
     }
 }
