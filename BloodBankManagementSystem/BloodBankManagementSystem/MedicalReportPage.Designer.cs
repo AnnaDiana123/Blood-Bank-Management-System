@@ -41,16 +41,12 @@ namespace BloodBankManagementSystem
             this.label14 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Result1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Result2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Result3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Result4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Result5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.bloodlogo = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bloodlogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +60,7 @@ namespace BloodBankManagementSystem
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(222, 600);
             this.panel1.TabIndex = 0;
@@ -141,7 +137,7 @@ namespace BloodBankManagementSystem
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(222, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(778, 36);
             this.panel2.TabIndex = 1;
@@ -177,57 +173,16 @@ namespace BloodBankManagementSystem
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // dataGridView1
+            // dataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Result1,
-            this.Result2,
-            this.Result3,
-            this.Result4,
-            this.Result5});
-            this.dataGridView1.Location = new System.Drawing.Point(341, 146);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(575, 351);
-            this.dataGridView1.TabIndex = 2;
-            // 
-            // Result1
-            // 
-            this.Result1.HeaderText = "Result1";
-            this.Result1.MinimumWidth = 6;
-            this.Result1.Name = "Result1";
-            this.Result1.Width = 125;
-            // 
-            // Result2
-            // 
-            this.Result2.HeaderText = "Result2";
-            this.Result2.MinimumWidth = 6;
-            this.Result2.Name = "Result2";
-            this.Result2.Width = 125;
-            // 
-            // Result3
-            // 
-            this.Result3.HeaderText = "Result3";
-            this.Result3.MinimumWidth = 6;
-            this.Result3.Name = "Result3";
-            this.Result3.Width = 125;
-            // 
-            // Result4
-            // 
-            this.Result4.HeaderText = "Result4";
-            this.Result4.MinimumWidth = 6;
-            this.Result4.Name = "Result4";
-            this.Result4.Width = 125;
-            // 
-            // Result5
-            // 
-            this.Result5.HeaderText = "Result5";
-            this.Result5.MinimumWidth = 6;
-            this.Result5.Name = "Result5";
-            this.Result5.Width = 125;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Location = new System.Drawing.Point(274, 146);
+            this.dataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.RowHeadersWidth = 51;
+            this.dataGridView.RowTemplate.Height = 24;
+            this.dataGridView.Size = new System.Drawing.Size(653, 290);
+            this.dataGridView.TabIndex = 2;
             // 
             // bloodlogo
             // 
@@ -242,18 +197,31 @@ namespace BloodBankManagementSystem
             this.bloodlogo.TabIndex = 54;
             this.bloodlogo.TabStop = false;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("MV Boli", 20F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
+            this.label9.Location = new System.Drawing.Point(428, 83);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(332, 34);
+            this.label9.TabIndex = 55;
+            this.label9.Text = "Report Results History";
+            // 
             // MedicalReportPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.bloodlogo);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MedicalReportPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
@@ -261,9 +229,10 @@ namespace BloodBankManagementSystem
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bloodlogo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -279,12 +248,8 @@ namespace BloodBankManagementSystem
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Result1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Result2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Result3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Result4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Result5;
+        private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.PictureBox bloodlogo;
+        private System.Windows.Forms.Label label9;
     }
 }

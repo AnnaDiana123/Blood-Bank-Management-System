@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,10 +14,24 @@ namespace BloodBankManagementSystem
     public partial class MedicalReportPage : Form
     {
         private int currentID;
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""|DataDirectory|\BloodBankDatabase.mdf"";Integrated Security=True");
         public MedicalReportPage(int id)
         {
             InitializeComponent();
-            currentID = id; 
+            currentID = id;
+            populate();
+        }
+        private void populate()
+        {
+            conn.Open();
+            string query;
+            query = "select Date, RResult1,RResult2, RResult3,RResult4 from ReportTable join TransactionTable on TransactionTable.TNum=ReportTable.TNum join DonorTable on DonorTable.DNum=TransactionTable.DNum where DonorTable.DNum='"+currentID.ToString()+"'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            dataGridView.DataSource = ds.Tables[0];
+            conn.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)

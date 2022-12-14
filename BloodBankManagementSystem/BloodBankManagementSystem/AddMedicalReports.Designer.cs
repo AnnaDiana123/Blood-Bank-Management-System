@@ -30,7 +30,6 @@ namespace BloodBankManagementSystem
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TextBox textBoxResult3;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddMedicalReports));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,13 +51,11 @@ namespace BloodBankManagementSystem
             this.label10 = new System.Windows.Forms.Label();
             this.textBoxResult4 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBoxResult5 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.labelStatus = new System.Windows.Forms.Label();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.bloodlogo = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
-            textBoxResult3 = new System.Windows.Forms.TextBox();
+            this.textBoxResult3 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bloodlogo)).BeginInit();
@@ -260,14 +257,6 @@ namespace BloodBankManagementSystem
             this.label9.TabIndex = 43;
             this.label9.Text = "Result 2";
             // 
-            // textBoxResult3
-            // 
-            textBoxResult3.Font = new System.Drawing.Font("MV Boli", 10F);
-            textBoxResult3.Location = new System.Drawing.Point(767, 305);
-            textBoxResult3.Name = "textBoxResult3";
-            textBoxResult3.Size = new System.Drawing.Size(141, 29);
-            textBoxResult3.TabIndex = 46;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -300,26 +289,6 @@ namespace BloodBankManagementSystem
             this.label12.TabIndex = 47;
             this.label12.Text = "Result 4";
             // 
-            // textBoxResult5
-            // 
-            this.textBoxResult5.Font = new System.Drawing.Font("MV Boli", 10F);
-            this.textBoxResult5.Location = new System.Drawing.Point(767, 437);
-            this.textBoxResult5.Name = "textBoxResult5";
-            this.textBoxResult5.Size = new System.Drawing.Size(141, 29);
-            this.textBoxResult5.TabIndex = 50;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("MV Boli", 15F, System.Drawing.FontStyle.Bold);
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(643, 437);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(102, 26);
-            this.label13.TabIndex = 49;
-            this.label13.Text = "Result 5";
-            // 
             // labelStatus
             // 
             this.labelStatus.AutoSize = true;
@@ -346,6 +315,7 @@ namespace BloodBankManagementSystem
             this.buttonAdd.Text = "Add";
             this.buttonAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // bloodlogo
             // 
@@ -372,21 +342,27 @@ namespace BloodBankManagementSystem
             this.label14.TabIndex = 54;
             this.label14.Text = "Add Medical Report";
             // 
+            // textBoxResult3
+            // 
+            this.textBoxResult3.Font = new System.Drawing.Font("MV Boli", 10F);
+            this.textBoxResult3.Location = new System.Drawing.Point(767, 305);
+            this.textBoxResult3.Name = "textBoxResult3";
+            this.textBoxResult3.Size = new System.Drawing.Size(141, 29);
+            this.textBoxResult3.TabIndex = 55;
+            // 
             // AddMedicalReports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.Controls.Add(this.textBoxResult3);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.bloodlogo);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.buttonAdd);
-            this.Controls.Add(this.textBoxResult5);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.textBoxResult4);
             this.Controls.Add(this.label12);
-            this.Controls.Add(textBoxResult3);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBoxResult2);
             this.Controls.Add(this.label9);
@@ -433,11 +409,10 @@ namespace BloodBankManagementSystem
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBoxResult4;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBoxResult5;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label labelStatus;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.PictureBox bloodlogo;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBoxResult3;
     }
 }
