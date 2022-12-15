@@ -83,6 +83,7 @@ namespace BloodBankManagementSystem
                 {
                     labelStatus.Text = ex.Message;
                     Console.WriteLine(ex.Message);
+                    conn.Close();
                 }
             }
         }

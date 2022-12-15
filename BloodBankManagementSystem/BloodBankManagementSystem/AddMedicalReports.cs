@@ -94,9 +94,15 @@ namespace BloodBankManagementSystem
                 {
                     labelStatus.Text = ex.Message;
                     Console.WriteLine(ex.Message);
+                    conn.Close();
                 }
                 
             }
+        }
+
+        private void AddMedicalReports_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
