@@ -58,7 +58,7 @@ namespace BloodBankManagementSystem
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(222, 600);
             this.panel1.TabIndex = 0;
@@ -135,7 +135,7 @@ namespace BloodBankManagementSystem
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(222, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(778, 36);
             this.panel2.TabIndex = 1;
@@ -177,7 +177,7 @@ namespace BloodBankManagementSystem
             this.bloodlogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bloodlogo.Image = ((System.Drawing.Image)(resources.GetObject("bloodlogo.Image")));
             this.bloodlogo.InitialImage = ((System.Drawing.Image)(resources.GetObject("bloodlogo.InitialImage")));
-            this.bloodlogo.Location = new System.Drawing.Point(515, 206);
+            this.bloodlogo.Location = new System.Drawing.Point(500, 172);
             this.bloodlogo.Name = "bloodlogo";
             this.bloodlogo.Size = new System.Drawing.Size(202, 208);
             this.bloodlogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -187,12 +187,14 @@ namespace BloodBankManagementSystem
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(524, 115);
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("MV Boli", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
+            this.label6.Location = new System.Drawing.Point(519, 383);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.Size = new System.Drawing.Size(183, 41);
             this.label6.TabIndex = 3;
-            this.label6.Text = "label6";
-            this.label6.Click += new System.EventHandler(this.label6_Click_1);
+            this.label6.Text = "Welcome !";
             // 
             // MainFormDonor
             // 
@@ -205,7 +207,7 @@ namespace BloodBankManagementSystem
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainFormDonor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";

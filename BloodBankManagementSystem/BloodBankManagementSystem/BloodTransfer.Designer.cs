@@ -53,11 +53,11 @@ namespace BloodBankManagementSystem
             this.textBoxDonorName = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.comboBoxPatientID = new System.Windows.Forms.ComboBox();
-            this.comboBoxDonorID = new System.Windows.Forms.ComboBox();
+            this.comboBoxTransfusionID = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.buttonTransfer = new System.Windows.Forms.Button();
-            this.labelTransferSuccessfull = new System.Windows.Forms.Label();
+            this.labelStatus = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bloodlogo)).BeginInit();
@@ -218,6 +218,7 @@ namespace BloodBankManagementSystem
             this.textBoxBloodPatient.Font = new System.Drawing.Font("MV Boli", 10F);
             this.textBoxBloodPatient.Location = new System.Drawing.Point(826, 226);
             this.textBoxBloodPatient.Name = "textBoxBloodPatient";
+            this.textBoxBloodPatient.ReadOnly = true;
             this.textBoxBloodPatient.Size = new System.Drawing.Size(141, 29);
             this.textBoxBloodPatient.TabIndex = 18;
             // 
@@ -250,6 +251,7 @@ namespace BloodBankManagementSystem
             this.textBoxPatientName.Font = new System.Drawing.Font("MV Boli", 10F);
             this.textBoxPatientName.Location = new System.Drawing.Point(631, 226);
             this.textBoxPatientName.Name = "textBoxPatientName";
+            this.textBoxPatientName.ReadOnly = true;
             this.textBoxPatientName.Size = new System.Drawing.Size(141, 29);
             this.textBoxPatientName.TabIndex = 15;
             // 
@@ -270,6 +272,7 @@ namespace BloodBankManagementSystem
             this.textBoxBloodDonor.Font = new System.Drawing.Font("MV Boli", 10F);
             this.textBoxBloodDonor.Location = new System.Drawing.Point(826, 341);
             this.textBoxBloodDonor.Name = "textBoxBloodDonor";
+            this.textBoxBloodDonor.ReadOnly = true;
             this.textBoxBloodDonor.Size = new System.Drawing.Size(141, 29);
             this.textBoxBloodDonor.TabIndex = 22;
             // 
@@ -290,6 +293,7 @@ namespace BloodBankManagementSystem
             this.textBoxDonorName.Font = new System.Drawing.Font("MV Boli", 10F);
             this.textBoxDonorName.Location = new System.Drawing.Point(631, 341);
             this.textBoxDonorName.Name = "textBoxDonorName";
+            this.textBoxDonorName.ReadOnly = true;
             this.textBoxDonorName.Size = new System.Drawing.Size(141, 29);
             this.textBoxDonorName.TabIndex = 20;
             // 
@@ -312,14 +316,16 @@ namespace BloodBankManagementSystem
             this.comboBoxPatientID.Name = "comboBoxPatientID";
             this.comboBoxPatientID.Size = new System.Drawing.Size(182, 21);
             this.comboBoxPatientID.TabIndex = 23;
+            this.comboBoxPatientID.SelectedIndexChanged += new System.EventHandler(this.comboBoxPatientID_SelectedIndexChanged);
             // 
-            // comboBoxDonorID
+            // comboBoxTransfusionID
             // 
-            this.comboBoxDonorID.FormattingEnabled = true;
-            this.comboBoxDonorID.Location = new System.Drawing.Point(307, 341);
-            this.comboBoxDonorID.Name = "comboBoxDonorID";
-            this.comboBoxDonorID.Size = new System.Drawing.Size(182, 21);
-            this.comboBoxDonorID.TabIndex = 24;
+            this.comboBoxTransfusionID.FormattingEnabled = true;
+            this.comboBoxTransfusionID.Location = new System.Drawing.Point(307, 341);
+            this.comboBoxTransfusionID.Name = "comboBoxTransfusionID";
+            this.comboBoxTransfusionID.Size = new System.Drawing.Size(182, 21);
+            this.comboBoxTransfusionID.TabIndex = 24;
+            this.comboBoxTransfusionID.SelectedIndexChanged += new System.EventHandler(this.comboBoxTransfusionID_SelectedIndexChanged);
             // 
             // label14
             // 
@@ -341,9 +347,9 @@ namespace BloodBankManagementSystem
             this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(302, 299);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(106, 26);
+            this.label15.Size = new System.Drawing.Size(161, 26);
             this.label15.TabIndex = 26;
-            this.label15.Text = "Donor ID";
+            this.label15.Text = "Transfusion ID";
             // 
             // buttonTransfer
             // 
@@ -359,18 +365,19 @@ namespace BloodBankManagementSystem
             this.buttonTransfer.Text = "Transfer";
             this.buttonTransfer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.buttonTransfer.UseVisualStyleBackColor = false;
+            this.buttonTransfer.Click += new System.EventHandler(this.buttonTransfer_Click);
             // 
-            // labelTransferSuccessfull
+            // labelStatus
             // 
-            this.labelTransferSuccessfull.AutoSize = true;
-            this.labelTransferSuccessfull.BackColor = System.Drawing.Color.Transparent;
-            this.labelTransferSuccessfull.Font = new System.Drawing.Font("MV Boli", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTransferSuccessfull.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
-            this.labelTransferSuccessfull.Location = new System.Drawing.Point(526, 429);
-            this.labelTransferSuccessfull.Name = "labelTransferSuccessfull";
-            this.labelTransferSuccessfull.Size = new System.Drawing.Size(192, 20);
-            this.labelTransferSuccessfull.TabIndex = 28;
-            this.labelTransferSuccessfull.Text = "*status to be updated*";
+            this.labelStatus.AutoSize = true;
+            this.labelStatus.BackColor = System.Drawing.Color.Transparent;
+            this.labelStatus.Font = new System.Drawing.Font("MV Boli", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(37)))), ((int)(((byte)(44)))));
+            this.labelStatus.Location = new System.Drawing.Point(526, 429);
+            this.labelStatus.Name = "labelStatus";
+            this.labelStatus.Size = new System.Drawing.Size(192, 20);
+            this.labelStatus.TabIndex = 28;
+            this.labelStatus.Text = "*status to be updated*";
             // 
             // BloodTransfer
             // 
@@ -378,11 +385,11 @@ namespace BloodBankManagementSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1000, 600);
-            this.Controls.Add(this.labelTransferSuccessfull);
+            this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.buttonTransfer);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.comboBoxDonorID);
+            this.Controls.Add(this.comboBoxTransfusionID);
             this.Controls.Add(this.comboBoxPatientID);
             this.Controls.Add(this.textBoxBloodDonor);
             this.Controls.Add(this.label12);
@@ -435,10 +442,10 @@ namespace BloodBankManagementSystem
         private System.Windows.Forms.TextBox textBoxDonorName;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox comboBoxPatientID;
-        private System.Windows.Forms.ComboBox comboBoxDonorID;
+        private System.Windows.Forms.ComboBox comboBoxTransfusionID;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button buttonTransfer;
-        private System.Windows.Forms.Label labelTransferSuccessfull;
+        private System.Windows.Forms.Label labelStatus;
     }
 }

@@ -63,6 +63,7 @@ namespace BloodBankManagementSystem
                 catch (Exception ex)
                 {
                     labelStatus.Text = ex.Message;
+                    conn.Close();
                 }
             }
         }

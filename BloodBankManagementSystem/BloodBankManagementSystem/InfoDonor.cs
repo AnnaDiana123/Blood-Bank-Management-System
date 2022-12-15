@@ -102,8 +102,9 @@ namespace BloodBankManagementSystem
             else
             {
                 conn.Open();
-                string query = "update DonorTable set DName=@name, DAge=@age, DAddress=@address,DPhone=@phone";
+                string query = "update DonorTable set DName=@name, DAge=@age, DAddress=@address,DPhone=@phone where DNum=@id";
                 SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("id", currentID);
                 cmd.Parameters.AddWithValue("name", textBoxName.Text);
                 cmd.Parameters.AddWithValue("age", textBoxAge.Text);
                 cmd.Parameters.AddWithValue("address", textBoxAddress.Text);
@@ -113,6 +114,11 @@ namespace BloodBankManagementSystem
                 labelStatus.Text = "Info successfully updated!";
             }
         
+        }
+
+        private void InfoDonor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
